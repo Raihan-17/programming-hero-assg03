@@ -1,11 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pet Shop</title>
+     
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- adlan-display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+      <!-- sora -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    
+    <style>
+      .adlam-display {
+        font-family: "ADLaM Display", serif;
+      }
+      .sora {
+        font-family: "Sora", serif;
+      }
+
+    </style>
 </head>
 <body>
+    <nav class="sora bg-orange-50 py-4 ">
+
+        <div class="w-11/12 mx-auto   flex justify-between items-center">
+            <div class="flex gap-2 items-center">
+                <img src="./c1-assets/logo-header.png" alt="">
+                <h3 class="text-2xl hidden lg:block">Browse<span class="text-yellow-300">4</span>Pets</h3>
+             </div>
+            <div class="flex gap-5 text-1xl ">
+                <a href="">Find a pet</a>
+                <a href="">Breeds</a>
+                <a href="">Contact us</a>
+            </div>
+            <div class="flex gap-2 items-center">
+                <img class="lg:hidden" src="./c1-assets/icon-menu (1).png" alt="">
+                <img class="lg:visible sm:hidden" src="./c1-assets/bell-icon (1).png" alt="">
+                <img class="lg:visible sm:hidden" src="./c1-assets/search-icon (1).png" alt="">
+                <button  class="lg:visible sm:hidden" class="btn btn-outline border-yellow-400">Login</button>
+                <button  class="lg:visible sm:hidden" class="btn btn-warning">Resister</button>
+            </div>
+        </div>
+    </nav> 
+    <section >
+        <div class="lg:w-11/12 sm:w-5/12 h-screen mx-auto bg-[url(./c1-assets/cat-big.png)] bg-center bg-no-repeat bg-cover">
+            <h3 class="adlam-display text-[35px]">Pamper Your Pet,<br> Because They Deserve <br>the Best</h3>
+            <p class="sora text-[13px]">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="btn btn-warning">Find a pet</button>
+        </div>
+    </section>
+
+    <section class="w-11/12 mx-auto">
+        <h1 class="adlam-display  text-[24px]">Browse By Categories</h1>
+
+       <div class="flex justify-around items-center">
+
+     <div class="w-48 h-60 flex flex-col gap-4 bg-orange-200 pt-9 border rounded-md">
+        
+            <div class="  flex justify-center">
+              <img class="p-6 rounded-full  bg-white " src="./c1-assets/dog-cartoon.png" />
+            </div>
+
+        <h4 class="adlam-display  text-[15px] text-center">dog</h4>
+        <p class="sora text-[10px] text-center"> 3 items</p>
+     </div>
+
+     <div class="flex flex-col gap-2 bg-yellow-400">
+        <div class="avatar">
+            <div class=" rounded-full  ring  p-4">
+              <img src="./c1-assets/dog-cartoon.png" />
+            </div>
+        </div>
+        <h4 class="adlam-display  text-[15px]">dog</h4>
+        <p class="sora text-[10px]"> 3 items</p>
+     </div>
+
+     <div class="flex flex-col gap-2 bg-red-400">
+        <div class="avatar">
+            <div class=" rounded-full  ring  p-4">
+              <img src="./c1-assets/dog-cartoon.png" />
+            </div>
+        </div>
+        <h4 class="adlam-display  text-[15px]">dog</h4>
+        <p class="sora text-[10px]"> 3 items</p>
+     </div>
+
+     <div class="flex flex-col gap-2 bg-red-400">
+        <div class="avatar">
+            <div class=" rounded-full  ring  p-4">
+              <img src="./c1-assets/dog-cartoon.png" />
+            </div>
+        </div>
+        <h4 class="adlam-display  text-[15px]">dog</h4>
+        <p class="sora text-[10px]"> 3 items</p>
+     </div>
+
+     <div class="flex flex-col gap-2 bg-red-400">
+        <div class="avatar">
+            <div class=" rounded-full  ring  p-4">
+              <img src="./c1-assets/dog-cartoon.png" />
+            </div>
+        </div>
+        <h4 class="adlam-display  text-[15px]">dog</h4>
+        <p class="sora text-[10px]"> 3 items</p>
+     </div>
+
+     <div class="flex flex-col gap-2 bg-red-400">
+        <div class="avatar">
+            <div class=" rounded-full  ring  p-4">
+              <img src="./c1-assets/dog-cartoon.png" />
+            </div>
+        </div>
+        <h4 class="adlam-display  text-[15px]">dog</h4>
+        <p class="sora text-[10px]"> 3 items</p>
+     </div>
+
+      </div> 
+
+    </section>
     
 </body>
 </html>
