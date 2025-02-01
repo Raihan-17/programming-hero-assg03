@@ -30,37 +30,52 @@
 </head>
 <body>
    
-  <nav class="sora bg-orange-50 py-4 ">
+  <nav class="sora bg-orange-50 py-4 border-b-2 border-orange-300 md:border-b-0">
 
     <div class="w-11/12 mx-auto   flex justify-between items-center">
         <div class="flex gap-2 items-center">
             <img src="./c1-assets/logo-header.png" alt="">
-            <h3 class="text-2xl hidden md:visible">Browse<span class="text-yellow-300">4</span>Pets</h3>
+            <h3 class=" hidden lg:flex">Browse<span class="text-yellow-300">4</span>Pets</h3>
          </div>
-        <div class="flex gap-5 text-1xl ">
+        <div class="hidden md:flex gap-5 text-1xl ">
             <a href="">Find a pet</a>
             <a href="">Breeds</a>
             <a href="">Contact us</a>
         </div>
         <div class="flex gap-2 items-center">
             <img class="lg:hidden" src="./c1-assets/icon-menu (1).png" alt="">
-            <img class="lg:visible sm:hidden" src="./c1-assets/bell-icon (1).png" alt="">
-            <img class="lg:visible sm:hidden" src="./c1-assets/search-icon (1).png" alt="">
-            <button  class="lg:visible sm:hidden" class="btn btn-outline border-yellow-400">Login</button>
-            <button  class="lg:visible sm:hidden" class="btn btn-warning">Resister</button>
+            <img class="hidden lg:flex" src="./c1-assets/bell-icon (1).png" alt="">
+            <img class="hidden lg:flex" src="./c1-assets/search-icon (1).png" alt="">
+            <button  class="hidden lg:flex" class="btn btn-outline border-yellow-400">Login</button>
+            <button  class="hidden lg:flex" class="btn btn-warning">Resister</button>
         </div>
     </div>
 </nav> 
 
     <section >
-        <div class="w-11/12  sm:min-h-screen h-screen mx-auto bg-[url(./c1-assets/cat-big.png)] bg-center bg-no-repeat bg-cover ">
+        <div class="w-11/12 min-h-screen mx-auto bg-[url(./c1-assets/cat-big.png)] bg-center bg-no-repeat bg-cover mt-7 ">
            <div class="h-screen">
-            <h3 class="adlam-display text-[35px]">Pamper Your Pet,<br> Because They Deserve <br>the Best</h3>
+            <h3 class="adlam-display text-[35px] animate-bounce">Pamper Your Pet,<br> Because They Deserve <br>the Best</h3>
             <p class="sora text-[13px]">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
-            <button class="btn btn-warning">Find a pet</button>
+            <button class="btn btn-warning animate-pulse mt-4">Find a pet</button>
            </div>
         </div>
     </section>
+
+
+    <div class="hero w-11/12 mx-auto bg-orange-200 min-h-screen mt-10 rounded-lg">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <img src="./c1-assets/cute-pet-small.png"
+          class="max-w-sm rounded-lg shadow-2xl bg-white" />
+        <div>
+          <h1 class="text-5xl adlam-display">Are You taking Good Care of Your Loving Once?</h1>
+          <p class="sora py-6">
+            Taking good care of pets is essential for their health, happiness, and well-being. Providing a nutritious diet tailored to their specific needs ensures they receive the right vitamins and minerals to stay healthy. Regular exercise, whether through walks, playtime, or interactive activities, helps keep them physically and mentally stimulated...
+          </p>
+          <button class="sora btn btn-warning">Read More</button>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -136,157 +151,160 @@
     <section  class="w-11/12 mx-auto my-10">
       <p class="adlam-display  text-[1.5rem] mb-5">Trending Pet Products</p>
 
-      <div  class="flex gap-5  ">
+    <div  class="flex flex-wrap justify-around gap-5  ">
 
-        <div class="row-span-3 bg-orange-200 bg-opacity-50 bg-[url(./c1-assets/cute-pet-mid.png)] bg-bottom-right bg-no-repeat bg-cover">
-           
-            <div>
-            <h2 class="adlam-display  text-[1.3rem] mb-3">T-Shirt For Dogs</h2>
-            <p class="sora">Discover a world of trets, toys, and essentials handpicked.</p>
-            <button class="btn btn-warning">Shop Now</button>
-            </div>
+          
+      <div class="relative rounded-md bg-orange-200 w-2/5">
+        <!-- Image -->
+        <img src="./c1-assets/cute-pet-small.png" alt="Sample Image" class="">
+      
+        <div class="absolute top-0 left-0 flex ml-1">
+         <div> <h2 class="adlam-display  ">T-shirt for Dogs</h2>
+          <h1 class="">Discover a world of trets, toys, and essentials handpicked.</h1>
+          <button class="btn p-3 text-xs">shop Now</button>
         </div>
+        </div>
+      </div>
 
 
-      <div class="grid grid-cols-3 gap-4">
-        <div class="flex gap-2 bg-orange-200">
-            <img src="./c1-assets/dog-cartoon.png" alt="">
 
+      <!-- <div class="grid grid-cols-3 gap-4"> -->
+        <div class="flex flex-col gap-3 sora">
+
+           <div class="flex items-center gap-2 border rounded-md p-3 pr-10">
+             <img class="bg-orange-50 p-4 rounded-md" src="./c1-assets/dog-cartoon.png" alt="">
+             <div>
+             <div class="flex gap-0">
+             <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
+             <p>4.5</p>
+             </div>
+             <h3>Pet Bed</h3>
+             <p>$39.99</p>
+             </div>
+            </div>
+
+            <div class="flex items-center gap-2 border rounded-md p-3 pr-10">
+              <img class="bg-orange-50 p-4 rounded-md" src="./c1-assets/mouse-cartoon.png" alt="">
+              <div>
+              <div class="flex gap-0">
+              <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
+              <p>4.5</p>
+              </div>
+              <h3>Pet Bed</h3>
+              <p>$39.99</p>
+              </div>
+             </div>
+
+             <div class="flex items-center gap-2 border rounded-md p-3 pr-10">
+              <img class="bg-orange-50 p-4 rounded-md" src="./c1-assets/bird-cartoon.png" alt="">
+              <div>
+              <div class="flex gap-0">
+              <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
+              <p>4.5</p>
+              </div>
+              <h3>Pet Bed</h3>
+              <p>$39.99</p>
+              </div>
+             </div>
+            
+         </div>  
+         
+         <div class="flex flex-col gap-3 sora">
+
+          <div class="flex items-center gap-2 border rounded-md p-3 pr-10">
+            <img class="bg-orange-50 p-4 rounded-md" src="./c1-assets/rabbit-cartoon.png" alt="">
             <div>
-           <div class="flex gap-0">
+            <div class="flex gap-0">
             <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
             <p>4.5</p>
             </div>
-
             <h3>Pet Bed</h3>
             <p>$39.99</p>
             </div>
+           </div>
+
+           <div class="flex items-center gap-2 border rounded-md p-3 pr-10">
+             <img class="bg-orange-50 p-4 rounded-md" src="./c1-assets/pet-couch.png" alt="">
+             <div>
+             <div class="flex gap-0">
+             <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
+             <p>4.5</p>
+             </div>
+             <h3>Pet Bed</h3>
+             <p>$39.99</p>
+             </div>
+            </div>
+
+            <div class="flex items-center gap-2 border rounded-md p-3 pr-10">
+             <img class="bg-orange-50 p-4 rounded-md" src="./c1-assets/mouse-cartoon.png" alt="">
+             <div>
+             <div class="flex gap-0">
+             <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
+             <p>4.5</p>
+             </div>
+             <h3>Pet Bed</h3>
+             <p>$39.99</p>
+             </div>
+            </div>
+           
+        </div>  
+
+        <div class="flex flex-col gap-3 sora">
+
+          <div class="flex items-center gap-2 border rounded-md p-3 pr-10">
+            <img class="bg-orange-50 p-4 rounded-md" src="./c1-assets/fish-cartoon.png" alt="">
+            <div>
+            <div class="flex gap-0">
+            <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
+            <p>4.5</p>
+            </div>
+            <h3>Pet Bed</h3>
+            <p>$39.99</p>
+            </div>
+           </div>
+
+           <div class="flex items-center gap-2 border rounded-md p-3 pr-10">
+             <img class="bg-orange-50 p-4 rounded-md" src="./c1-assets/bird-cartoon.png" alt="">
+             <div>
+             <div class="flex gap-0">
+             <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
+             <p>4.5</p>
+             </div>
+             <h3>Pet Bed</h3>
+             <p>$39.99</p>
+             </div>
+            </div>
+
+            <div class="flex items-center gap-2 border rounded-md p-3 pr-10">
+             <img class="bg-orange-50 p-4 rounded-md" src="./c1-assets/cat-cartoon.png" alt="">
+             <div>
+             <div class="flex gap-0">
+             <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
+             <p>4.5</p>
+             </div>
+             <h3>Pet Bed</h3>
+             <p>$39.99</p>
+             </div>
+            </div>
+           
         </div>  
         
-        <div class="flex gap-2">
-            <img src="./c1-assets/dog-cartoon.png" alt="">
-
-            <div>
-           <div class="flex gap-0">
-            <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
-            <p>4.5</p>
-            </div>
-
-            <h3>Pet Bed</h3>
-            <p>$39.99</p>
-            </div>
-        </div> 
-
-        <div class="flex gap-2">
-            <img src="./c1-assets/dog-cartoon.png" alt="">
-
-            <div>
-           <div class="flex gap-0">
-            <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
-            <p>4.5</p>
-            </div>
-
-            <h3>Pet Bed</h3>
-            <p>$39.99</p>
-            </div>
-        </div>
-            
-    
-        <div class="flex gap-2">
-            <img src="./c1-assets/dog-cartoon.png" alt="">
-
-            <div>
-           <div class="flex gap-0">
-            <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
-            <p>4.5</p>
-            </div>
-
-            <h3>Pet Bed</h3>
-            <p>$39.99</p>
-            </div>
-        </div> 
-
-        <div class="flex gap-2">
-            <img src="./c1-assets/dog-cartoon.png" alt="">
-
-            <div>
-           <div class="flex gap-0">
-            <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
-            <p>4.5</p>
-            </div>
-
-            <h3>Pet Bed</h3>
-            <p>$39.99</p>
-            </div>
-        </div> 
-
-        <div class="flex gap-2">
-            <img src="./c1-assets/dog-cartoon.png" alt="">
-
-            <div>
-           <div class="flex gap-0">
-            <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
-            <p>4.5</p>
-            </div>
-
-            <h3>Pet Bed</h3>
-            <p>$39.99</p>
-            </div>
-        </div> 
-
-        <div class="flex gap-2">
-            <img src="./c1-assets/dog-cartoon.png" alt="">
-
-            <div>
-           <div class="flex gap-0">
-            <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
-            <p>4.5</p>
-            </div>
-
-            <h3>Pet Bed</h3>
-            <p>$39.99</p>
-            </div>
-        </div> 
-
-        <div class="flex gap-2">
-            <img src="./c1-assets/dog-cartoon.png" alt="">
-
-            <div>
-           <div class="flex gap-0">
-            <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
-            <p>4.5</p>
-            </div>
-
-            <h3>Pet Bed</h3>
-            <p>$39.99</p>
-            </div>
-        </div> 
-
-        <div class="flex gap-2">
-            <img src="./c1-assets/dog-cartoon.png" alt="">
-
-            <div>
-           <div class="flex gap-0">
-            <div class="mask mask-star-2 bg-yellow-500 w-6 h-6"></div>
-            <p>4.5</p>
-            </div>
-
-            <h3>Pet Bed</h3>
-            <p>$39.99</p>
-            </div>
-        </div> 
-      </div>  
+ 
+      <!-- </div>   -->
 
       </div>
     </section>
 
 
+
+
+
     <main class="w-11/12 mx-auto my-10">
-        <h3 class="adlam-display text-[1.5rem] mb-5"> Everyday low Price</h3>
+        <h3 class="adlam-display text-[1.8rem] mb-5"> Everyday low Price</h3>
 
-        <div class="flex gap-4 w-full border-2 justify-between">
+        <div class="md:flex hidden gap-5 w-full  justify-around">
 
-        <div class="w-full p-6 flex rounded-[12px] bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] justify-around items-center">
+         <div class=" p-6 flex rounded-2xl bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] items-center">
             <div>
                 <p class="sora text-[20]">Under Price</p>
                 <h3 class="adlam-display text-xl">Pet Grooming Mitt</h3>
@@ -294,19 +312,56 @@
                 <h1 class="adlam-display text-3xl font-bold">$7.99</h1>
             </div>
             
-            <img src="./c1-assets/cute-dog-mid.png" alt="">
+            <img class="max-w-sm" src="./c1-assets/cute-dog-mid.png" alt="">
         
-        </div>
+          </div>
                
-        <div class="w-full rounded-[12px] bg-gradient-to-br from-[#FFF7E2] to-[#FEEFC7] p-6 ">
-          <h2 class="adlam-display text-xl text-black">T-Shirt for Dogs</h2>
-          <p class="adlam-display text-3xl text-yellow-500 mt-2">$7.99</p>
-          <img src="./c1-assets/cute-pet-small.png" alt="Dog in T-Shirt" class="mt-4  object-contain">
+        <div class="relative  rounded-2xl w-2/5 bg-gradient-to-br from-[#FFF7E2] to-[#FEEFC7]">
+          <!-- Image -->
+          <img src="./c1-assets/cute-pet-small.png" alt="Sample Image" class="w-80 h-88 object-cover ">
+        
+          <!-- Text Overlay -->
+          <div class="absolute top-0 left-0 flex items-left justify-center  bg-opacity-50">
+           <div> <h2 class="mt-5 ml-3 adlam-display text-black text-2xl ">T-shirt for Dogs</h2>
+            <h1 class="mt-3 ml-3 adlam-display text-3xl text-yellow-500">$7.99</h1></div>
+          </div>
         </div>
         
-        
+        </div>
+
+        <div class="md:hidden">
+          <div class=" relative  h-95  mb-5 rounded-2xl bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD]  ">
+            <!-- Image -->
+            <img src="./c1-assets/cute-dog-mid.png" alt="Sample Image" class="w-80  object-cover">
+          
+            <!-- Text Overlay -->
+            <div class="absolute top-0 left-0 flex items-left ">
+             <div> <h2 class=" ml-3 adlam-display text-black text-2xl ">T-shirt for Dogs</h2>
+              <h1 class="mt-1 ml-3 adlam-display text-3xl text-orange-400">$7.99</h1></div>
+            </div>
+          </div>
+
+          <div class="relative  rounded-2xl bg-gradient-to-br from-white to-orange-200">
+            <!-- Image -->
+            <img src="./c1-assets/cute-pet-small.png" alt="Sample Image" class="w-80 h-88 object-cover">
+          
+            <!-- Text Overlay -->
+            <div class="absolute top-0 left-0 flex items-left justify-center  bg-opacity-50">
+             <div> <h2 class="mt-5 ml-3 adlam-display text-black text-2xl ">T-shirt for Dogs</h2>
+              <h1 class="mt-3 ml-3 adlam-display text-3xl text-yellow-500">$7.99</h1></div>
+            </div>
+          </div>
+
+
         </div>
     </main>
+
+
+   
+
+
+
+
 
     <section class="w-11/12  mx-auto rounded-[12px] bg-[#FFF7E2] p-6 flex flex-col md:flex-row  items-center md:pl-20 md:pb-10 relative z-10 -mb-20">
       
