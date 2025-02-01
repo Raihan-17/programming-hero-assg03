@@ -30,7 +30,27 @@
 </head>
 <body>
    
+  <nav class="sora bg-orange-50 py-4 ">
 
+    <div class="w-11/12 mx-auto   flex justify-between items-center">
+        <div class="flex gap-2 items-center">
+            <img src="./c1-assets/logo-header.png" alt="">
+            <h3 class="text-2xl hidden md:visible">Browse<span class="text-yellow-300">4</span>Pets</h3>
+         </div>
+        <div class="flex gap-5 text-1xl ">
+            <a href="">Find a pet</a>
+            <a href="">Breeds</a>
+            <a href="">Contact us</a>
+        </div>
+        <div class="flex gap-2 items-center">
+            <img class="lg:hidden" src="./c1-assets/icon-menu (1).png" alt="">
+            <img class="lg:visible sm:hidden" src="./c1-assets/bell-icon (1).png" alt="">
+            <img class="lg:visible sm:hidden" src="./c1-assets/search-icon (1).png" alt="">
+            <button  class="lg:visible sm:hidden" class="btn btn-outline border-yellow-400">Login</button>
+            <button  class="lg:visible sm:hidden" class="btn btn-warning">Resister</button>
+        </div>
+    </div>
+</nav> 
 
     <section >
         <div class="w-11/12  sm:min-h-screen h-screen mx-auto bg-[url(./c1-assets/cat-big.png)] bg-center bg-no-repeat bg-cover ">
@@ -262,30 +282,87 @@
 
 
     <main class="w-11/12 mx-auto my-10">
-        <h3> Everyday low Price</h3>
+        <h3 class="adlam-display text-[1.5rem] mb-5"> Everyday low Price</h3>
 
-        <div class="flex mid:flex-col">
-        <div class="flex rounded-[12px] bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] justify-around items-center">
+        <div class="flex gap-4 w-full border-2 justify-between">
+
+        <div class="w-full p-6 flex rounded-[12px] bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] justify-around items-center">
             <div>
-                <p>Under Price</p>
-                <h3>Pet Grooming Mitt</h3>
-                <p>(Easy Hair Removal)</p>
-                <h1>$7.99</h1>
+                <p class="sora text-[20]">Under Price</p>
+                <h3 class="adlam-display text-xl">Pet Grooming Mitt</h3>
+                <p class="adlam-display text-white">(Easy Hair Removal)</p>
+                <h1 class="adlam-display text-3xl font-bold">$7.99</h1>
             </div>
             
             <img src="./c1-assets/cute-dog-mid.png" alt="">
         
         </div>
-
-        <div class="flex ">
-            <div>
-                <h3>T-Shirt for Dogs</h3>
-                <h1>$7.99</h1>
-            </div>
-            <img src="./c1-assets/cute-pet-small.png" alt="">
+               
+        <div class="w-full rounded-[12px] bg-gradient-to-br from-[#FFF7E2] to-[#FEEFC7] p-6 ">
+          <h2 class="adlam-display text-xl text-black">T-Shirt for Dogs</h2>
+          <p class="adlam-display text-3xl text-yellow-500 mt-2">$7.99</p>
+          <img src="./c1-assets/cute-pet-small.png" alt="Dog in T-Shirt" class="mt-4  object-contain">
         </div>
+        
+        
         </div>
     </main>
+
+    <section class="w-11/12  mx-auto rounded-[12px] bg-[#FFF7E2] p-6 flex flex-col md:flex-row  items-center md:pl-20 md:pb-10 relative z-10 -mb-20">
+      
+      <img src="./c1-assets/cute-pet-small.png" alt="Dog in T-Shirt" class="w-40 md:w-60 object-contain">
+    
+      <!-- Text & Subscription Form -->
+      <div class="md:ml-6 text-center flex flex-col gap-3 md:text-left flex-1">
+        <h2 class="adlam-display text-2xl">Get Pawsome News!</h2>
+        <p class="sora">Exclusive training tips, tricks, product deals, and more.</p>
+          <input type="email" placeholder="Enter email..." class="w-full md:w-80 p-3  rounded-lg focus:outline-none">
+          <button class="btn btn-warning w-40">Subscribe</button>
+          
+      </div>
+    </section>
+
+    <footer class="relative z-0 w-full bg-yellow-300 pt-40 pb-20 ">
+      <div class="w-11/12 mx-auto flex flex-col md:flex-row justify-between items-start">
+        
+        
+        <div class="max-w-sm">
+          <div class="flex gap-2 items-center">
+            <img src="./c1-assets/logo-footer.png" alt="">
+            <h3 class="text-2xl adlam-display">Browse<span class="text-yellow-500">4</span>Pets</h3>
+         </div>
+          <p class="sora mt-2">
+            Discover a world of treats, toys, and essentials handpicked for your furry friends.
+          </p>
+        </div>
+    
+        <!-- Middle Section: Links -->
+        <div class="flex flex-col space-y-2 mt-6 md:mt-1">
+          <a href="" class="sora text-1xl">Find a pet</a>
+          <a href="" class="sora text-1xl">Breeds</a>
+          <a href="" class="sora text-1xl">Contact us</a>
+        </div>
+    
+      
+        <div class="mt-6 md:mt-1">
+          <p class="sora text-4">Follow Us</p>
+          <div class="flex space-x-4 mt-2">
+            
+            <img src="./c1-assets/fb.png" alt="">
+            <img src="./c1-assets/google+.png" alt="">
+            <img src="./c1-assets/dribble.png" alt="">
+            <img src="./c1-assets/twitter.png" alt="">
+
+          </div>
+        </div>
+    
+      </div>
+    </footer>
+    
+    
     
 </body>
 </html>
+
+
+
